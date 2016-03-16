@@ -1,0 +1,27 @@
+{
+	"pattrstorage" : 	{
+		"name" : "my_pattr",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"wedding::pitchprob" : [ -1 ],
+					"my_distribution" : [ -1.0, -0.377778, 0.066667, 0.481481 ]
+				}
+
+			}
+,
+			"2" : 			{
+				"id" : 2,
+				"data" : 				{
+					"wedding::pitchprob" : [ -1 ],
+					"my_distribution" : [ 0.540741, 0.303704, -0.155556, -1.0 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}

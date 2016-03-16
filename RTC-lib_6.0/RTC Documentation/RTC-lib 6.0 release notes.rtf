@@ -1,0 +1,147 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265
+\cocoascreenfonts1{\fonttbl\f0\fnil\fcharset0 Avenir-Book;}
+{\colortbl;\red255\green255\blue255;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid301\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid4}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww15300\viewh17940\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\sl360\qc
+
+\f0\fs36 \cf0 Karlheinz Essl
+\b \
+RTC-lib 6.0 release notes
+\b0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\sl240\qc
+\cf0 1993-2014\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\sl240
+
+\fs32 \cf0 RTC-lib 6.0 is running on Apple Macintosh Computers with Intel processors with Max5 or Max6 under Mac OS X 10.6 or later. 
+\fs36 \
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640
+
+\b \cf0 New Objects\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\b0\fs32 \cf0 	\
+	* trans-exp2: abstraction - works differently as the external transp-exp\
+	* display-row: displays a (numerical) 12-tone-row in musical notation
+\fs36 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\sl240
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640
+
+\b \cf0 Updated Objects\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640
+
+\b0 \cf0 	
+\fs32 * periodic (vs. 1.2): avoids repetitions when periodic factor is 0\
+	* sneak-random (vs. 1.2): start value can be defined\
+	* rtc-fullscreen: new works with Max6\
+	* play-samp~ (vs. 1.1): now accepts a \'84stop\'94 message to stop playing
+\b \
+
+\b0 	* samp10~ (vs. 1.2): now accepts a \'84stop\'94 message to stop playing
+\b \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640
+
+\fs36 \cf0 \
+Eliminated objects
+\b0\fs32 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+	* join: no longer necessary as Max6 has its own join object that is fully compatible \
+	  with the old external by James McCartney!
+\fs36 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640
+
+\b \cf0 Modified help-files
+\b0 \
+\
+	
+\fs32 * trans-log: float number boxes are now correctly limited \
+	* scramble: now accepts any type of lists (also containing symbols)\
+	* row-modus: displays 12-tone-row in musical notation\
+	* matrix12: displays 12-tone-row in musical notation\
+	* transpose-row: displays 12-tone-row in musical notation
+\fs36 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640
+
+\fs32 \cf0 	* permutate-row: displays 12-tone-row in musical notation\
+	* normalize-row: displays 12-tone-row in musical notation\
+	* random-row: displays 12-tone-row in musical notation\
+	* pitch-from-row: displays 12-tone-row in musical notation\
+
+\fs36 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640
+
+\b \cf0 RTC-lib Tutorial\
+\
+\pard\pardeftab720\sa260
+
+\b0\fs32 \cf0 This tutorial contains elaborated examples for algorithmic composition in real time. It demonstrates how selected compositorial issues such as harmony, rhythm, and random can be mastered with the aid of the RTC-lib. Furthermore it contains several especially adapted and documented structure generators from Karlheinz Essl's "Lexikon-Sonate" (1993-2007) such as Triller, MeloChord, and Esprit.\
+
+\fs36 \
+\pard\pardeftab720
+
+\b \cf0 Random
+\b0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls1\ilvl0
+\fs32 \cf0 {\listtext	\'95	}Random-Generators\
+{\listtext	\'95	}Selection-Principles
+\fs36 \
+\
+\pard\pardeftab720\sa260
+
+\b \cf0 Harmony
+\b0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls2\ilvl0
+\fs32 \cf0 {\listtext	\'95	}Brownian-Melodies\
+{\listtext	\'95	}Harmony-by-Intervals\
+{\listtext	\'95	}Row-Permutation
+\fs36 \
+\
+\pard\pardeftab720\sa260
+
+\b \cf0 Rhythm
+\b0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls3\ilvl0
+\fs32 \cf0 {\listtext	\'95	}Brownian-Rhythm\
+{\listtext	\'95	}Super-Rhythm\
+{\listtext	\'95	}Rhythm-Scales
+\fs36 \
+\
+\pard\pardeftab720\sa260
+
+\b \cf0 Structure Generators
+\b0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls4\ilvl0
+\fs32 \cf0 {\listtext	\'95	}Esprit-Demo\
+{\listtext	\'95	}MeloChord-Demo\
+{\listtext	\'95	}Triller-Demo
+\fs36 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\sl240
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640
+\cf0 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640
+
+\fs24 \cf0 updated: 31 Jan 2014\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640
+{\field{\*\fldinst{HYPERLINK "http://www.essl.at"}}{\fldrslt \cf0 http://www.essl.at}}\
+SDG}
